@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exo html selecteur 2 </title>
+</head>
+<body>
+    <main>
+        <h2>Exercice 2 : affectation d'un style suite à un frère identifiable</h2>
+        <p>Pour cet exercice :</p>
+        <ul>
+            <li>nous allons utiliser quelques citations amusantes émises par des personnages célèbres (ou du moins attribuées à).</li>
+            <li>nous utiliserons une mise en page par un paragraphe p.</li>
+            <li>la citation sera placée dans un q.</li>
+            <li>l'auteur prétendu de la citation ne sera placé dans aucun élément, mais il suivra la citation et se terminera par un saut de ligne br.</li>
+            <li>une citation contiendra une classe ma_classe.</li>
+            <li>nous placerons également un titre h1 avant notre paragraphe.</li>
+            <li>ce titre contiendra un élément unique em avant notre paragraphe.</li>
+            <li>faire en sorte que :
+                <ul>
+                    <li>les citations soient par défaut sur un fond jaune (#ffffcc),</li>
+                    <li>toutes les citations suivant la citation de classe ma_classe soient sur un fond rouge clair (#ffcccc),</li>
+                    <li>tous les éléments enfants uniques soient sur un fond vert clair (#ccffcc).</li>
+                </ul>
+            </li>
+        </ul>
+
+        <style>
+            #ex2 q {
+                background: #ffffcc; 
+            }
+           #ex2 .ma_classe ~ q {
+                background: #ffcccc; 
+            }
+           #ex2 :only-child{
+                background: #ccffcc;
+            }
+
+        </style>
+    <div id="ex2">
+            <h1>Quelques <em>citations</em> amusantes ...</h1>
+            <p>
+                <q>Quand les bornes sont franchies, il n'y a plus de limite.</q> Pierre Dac.<br />
+                <q>On l'a retrouvé assassiné un jour, il en est mort.</q> Hugues dans Le Grand détournement - La Classe américaine.<br />
+                <q>Ma patience a des limites mais il ne faut pas exagérer.</q> Fred Williamson dans White Fire.<br />
+                <q>Je vais te tuer jusqu'à ce que tu sois mort !</q> Jerry Haleva alias Saddam Hussein dans Hot Shots 2.<br />
+                <q class="ma_classe">Selon l'ancien code des corsaires : celui qui crève est vaincu !</q> President Thomas -Tug- Benson dans Hot Shots 2.<br />
+                <q>Ce que j'ai écrit, je l'ai écrit.</q> Ponce Pilate.<br />
+                <q>Quand c'est rugueux, c'est pas lisse.</q> Jacques Lanzmann<br />
+                <q>Je pense que nous sommes d'accord : le passé est révolu.</q> George W. Bush.<br />
+                <q>La plupart de nos importations viennent de l'étranger.</q> George W. Bush<br />
+                <q>Je vais te faire pleurer jusqu'à ce que tu pleures.</q> Jamel Debbouze dans Le Boulet.<br />
+                <q>Si on n'avait pas perdu une heure et quart, on serait là depuis une heure et quart.</q> Johnny Halliday.<br />
+                <q>La meilleure façon de dire la vérité, c'est de ne pas mentir.</q>
+                <q>Cet homme a quitté la France depuis quinze ans et depuis quinze ans il est à l'étranger.</q>
+                Charles Lemontier alias Jacques II de Chabannes de La Palice dans François Ier.<br />
+            </p>
+            <hr>
+    </div>
+
+    <style>
+
+        span {
+            background: darkcyan;
+        }
+        span > strong {
+            background: #ffcccc;
+        }
+        strong + span {
+            background: #ccc;
+        }
+
+        span ~ strong {
+            background: #000;
+            color: #fff;
+        }
+
+    
+           
+    </style>
+    
+    <div >
+        <p>
+            <strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est blanditiis rem consequatur facilis atque dignissimos aspernatur, repellendus enim veritatis porro beatae alias ut voluptatum natus ea cumque modi cum ex!</strong> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa placeat accusamus necessitatibus temporibus! Impedit repellendus maiores aliquam nostrum ratione vitae atque cumque, perferendis saepe consectetur corrupti amet alias rem commodi Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi dolore pariatur quod, aliquam minus reiciendis error quisquam neque nemo vitae minima maxime ipsa alias omnis nisi voluptates repellendus reprehenderit consectetur?<strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minima nostrum consequuntur atque aliquid. Maiores obcaecati, aliquid ratione ea repellat ducimus. Commodi maxime repellendus placeat veritatis incidunt magnam accusamus debitis.</strong></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quaerat in ducimus, harum illo iure numquam, voluptas tenetur illum sit magnam est voluptatem sunt, quidem ab <span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam doloremque, ex modi officia tempora nisi magnam qui neque iste animi, assumenda illum. Architecto ipsam consectetur maiores dolore eveniet, illo hic.</span>fugiat rerum iusto perspiciatis Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit placeat dolorem reiciendis quidem, inventore dolorum voluptatum nihil delectus. Enim tempore amet natus, cupiditate rerum molestiae. Recusandae exercitationem atque non explicabo <strong> Lorem ipsum dolor <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum enim cum possimus quas ratione sint ea tempora facere recusandae rem quod amet quasi exercitationem nostrum, provident modi doloribus. Ut, quae.</span> sit amet consectetur adipisicing elit. Sed est sapiente consectetur, in eveniet ad omnis delectus, fugiat recusandae vitae eius eum dolor sint ipsum nulla distinctio facere dolore rerum!</strong>
+        </p>
+
+    </div>
+    </main>
+</body>
+</html>

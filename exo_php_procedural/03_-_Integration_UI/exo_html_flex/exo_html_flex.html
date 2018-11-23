@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exo_html_flex</title>
+</head>
+<body>
+
+    <style>
+        body{
+            color: #fff;
+            height: 100vh;
+            width: 100%;
+            font-size: 20px;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            border-bottom: solid 1px #fff;
+
+        }
+        header{
+            background: lightblue;
+            height:20%;
+            border-radius: 5px;
+        }
+
+        main{
+            height: 70%;
+        }
+
+        h1, .Item4{
+           align-self: center;
+        }
+        li, .Item1, .Item2 {
+            padding: 10px;
+        }
+        header, .Item1, .Item2, footer {
+            border-radius: 5px;
+            margin-bottom: 2px;
+        }
+        header, footer{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .item{
+            height:100%;
+            display: flex;  
+            flex-direction: row-reverse;
+            justify-content: space-around;
+        }
+        .Item1{
+            background: lightpink;
+            width: 70%;
+            flex: 1;     
+        }
+        .Item2{
+            background: darkorange;
+            width: 30%;
+            margin-right: 2px;
+            order: 1;
+         }
+        footer{
+            background: darkgreen;
+            height: 5%;
+        }
+
+
+    </style>
+
+<h2 style="color: black">Montage en FLEX</h2>
+    <header>
+        <h1>I do love my Knacky Balls</h1>
+    </header>
+    <main>
+        <div class="item">
+                <nav class="Item2">
+                        <ul>
+                            <li>Salade</li>
+                            <li>Tomate</li>
+                            <li>Oignon</li>
+                            <li>Choucroute</li>
+                            <li>Picon bière</li>
+                        </ul>
+                    </nav>
+            <div class="Item1">
+                <h2>Flexbox c'est la vie, Hopla !</h2>
+                <p>flex:1; <br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam expedita molestiae nostrum maxime tempore dolorem, omnis possimus, ea sequi veniam facilis debitis modi distinctio quia corrupti? Commodi, laborum rerum.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+            <div class="Item4">Hopla le pied de pache </div>
+    </footer>
+
+
+    <hr>
+    <hr>
+    <style>
+        .Conteneur{
+            display: grid;
+            height: 40em;
+            width: 100%;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 15% 80% 5% ;
+            grid-template-areas: 
+                'Head Head'
+                'Nav Content'
+                'Footer Footer'; 
+            grid-gap: 2px;
+            border-radius: 5px;
+        }
+        .Head, .Nav, .Content, .Footer {
+            border-radius: 5px;
+            text-align: center;
+            padding-left: 5px;
+        }
+        .Head{
+            grid-area: Head;
+            background: lightblue;
+        }
+        .Nav{
+            grid-area: Nav;
+            background: orange;
+            text-align: left;
+        }
+        .Content{
+            grid-area: Content;
+            background: pink;
+            text-align: left;
+        }
+        .Footer{
+            grid-area: Footer;
+            background: darkgreen;
+        }
+
+        @media screen and (max-width: 768px){
+            .Conteneur{
+                grid-template-columns: 1fr   ;
+                grid-template-rows: 15% 30% 50% 5% ;
+                grid-template-areas: 
+                'Head '
+                'Nav '
+                'Content '
+                'Footer ';
+            }
+        }
+    </style>
+
+    <h2 style="color: black">Montage en GRID</h2>
+
+    <div class="Conteneur">
+        <div class="Head">
+                <h1>I do love my Knacky Balls</h1>
+        </div>
+        <div class="Nav">
+            <ul>
+                    <li>Salade</li>
+                    <li>Tomate</li>
+                    <li>Oignon</li>
+                    <li>Choucroute</li>
+                    <li>Picon bière</li>
+                </ul>
+        </div>
+        <div class="Content">
+            <h2>Flexbox c'est la vie, Hopla !</h2>
+            <p>flex:1; <br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam expedita molestiae nostrum maxime tempore dolorem, omnis possimus, ea sequi veniam facilis debitis modi distinctio quia corrupti? Commodi, laborum rerum.</p>
+        </div>
+        <div class="Footer">
+                Hopla le pied de pache
+        </div>
+
+    </div>
+
+</body>
+</html>

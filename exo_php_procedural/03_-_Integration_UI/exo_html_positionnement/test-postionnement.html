@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Le positionnement CSS </title>
+</head>
+
+<body>
+
+        <ul style="list-style-type: none; position: relative;">
+                <li style="background-color: black;color: white;height: 150px;width: 150px;
+                position: relative;"> Li 1</li>
+                <li style="background-color: blue;height:  150px;color:  white;width:  150px;
+                position: relative;"> Li 2 </li>
+                <li style="display: inline-block;background-color: aqua;height: 150px;width: 150px;
+                position: relative;"> Li 3</li>
+            </ul>
+        
+     <div style="
+            background-color:  red;
+            height: 20em;
+            width: 500px;
+            position: relative;
+        "> Je suis une Div 
+            <span style="
+                background-color: yellow;
+                height: 150px;
+                width: 150px;
+                left: 20px;
+                top: 20px;
+                display:  block;
+                position: relative;
+            "> Je suis un Span 1 </span>  
+            <span style="
+            background-color: purple;
+            height: 150px;
+            width: 150px;
+            bottom: 130px;
+            left: 180px;
+            display:  block;
+            position: relative;
+        "> Je suis le Span 2 </span>
+            <span style="
+            background-color: teal;
+            height: 150px;
+            width: 150px;
+            bottom: 280px;
+            left: 340px;
+            display:  block;
+            position: relative;
+        "> Je suis le Span 3 </span>
+    </div>
+
+    <div style="
+    background-color: black;
+    color: beige;
+    position: fixed;
+    height: 7em;
+    width: 3em;
+    top: 25%;
+    right: 0px;">
+        Je suis une Div en position Fixe  à 1/4 ! 
+    </div>
+
+   <div style="position: relative;
+   display: block;
+   clear: both;">
+        <div style="
+        background-color: rgb(17, 99, 6);
+        color: beige;
+        float: left;
+        height: 5em;
+        width: 65%;">
+             Je suis une div en position flottant Gauche // Ou je suis une nav  ! 
+        </div>
+        <div style="
+        background-color: rgb(17, 99, 6);
+        color: beige;
+        float: right;
+        height: 5em;
+        width: 33%;">
+                Je suis une div en position flottant Droite ! // Ou je suis une sidebar
+        </div>
+   </div>
+   
+   <footer style="
+   display: block; 
+    background-color: gray;
+    width: 30em;
+    height: 2em;
+    clear: both;
+   "> Je suis une Div en Footer  Mais ma vie n'est pas si pourrite que ça =) </footer>
+   
+</body>
+
+</html>
+

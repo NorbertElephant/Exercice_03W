@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exo html Selecteur_1</title>
+</head>
+<body>
+    <main>
+            <h2>Exercice 1 : affectation d'un style sur sélecteur de répétition</h2>
+            <p>Pour cet exercice :</p>
+            <ul>
+                <li>nous allons créer un tableau régulier (nombre de colonnes constant par lignes) avec table, tr, td et th.</li>
+                <li>le tableau contiendra au moins 10 lignes tr et 2 colonnes td.</li>
+                <li>la première ligne du tableau sera une ligne d'en-tête et n'aura que des colonnes th.</li>
+                <li>nous ferons en sorte qu'après la ligne d'en-tête, toutes les 6 lignes un périodicité de couleurs soit établie :
+                    <ul>
+                        <li>les 3 premières lignes seront sur un fond rouge clair (#ffcccc),</li>
+                        <li>la quatrième ligne sera sur un fond jaune clair (#ffffcc),</li>
+                        <li>la cinquième ligne sera sur un fond vert clair (#ccffcc),</li>
+                        <li>la sixième ligne sera sur un fond bleu clair (#ccffff).</li>
+                    </ul>
+                </li>
+                <li>nous ferons également en sorte que :
+                    <ul>
+                        <li>la ligne d'en-tête soit en caractères blancs sur fond rouge sombre (#663333),</li>
+                        <li>la deuxième colonne soit écrite en rouge (#ff0000).</li>
+                    </ul>
+                </li>
+            </ul>
+            <hr />
+<style>
+    table thead th{
+        background: #663333;
+        color: #fff;
+    }
+    table td:last-child{
+        color: #ff0000;
+    }
+    table tr{
+        background: #ffcccc;
+    }
+    table tr:nth-child(6n+4){
+        background: #ffffcc;
+    }
+    table tr:nth-child(6n+5){
+        background: #ccffcc;
+    }
+    table tr:nth-child(6n+6){
+        background: #ccffff;
+    }
+    
+</style>
+            <table border="1" cellspace="1" >
+                <thead>
+                    <th>En-tête 1</th>
+                    <th>En-tête 2</th>
+                </thead>
+                <tr>
+                        <td>Item1</td>
+                        <td>Item2</td>
+                </tr>
+                <tr>
+                        <td>Item1</td>
+                        <td>Item2</td>
+                </tr>
+                <tr>
+                        <td>Item1</td>
+                        <td>Item2</td>
+                </tr>
+                <tr>
+                        <td>Item1</td>
+                        <td>Item2</td>
+                </tr>
+                <tr>
+                        <td>Item1</td>
+                        <td>Item2</td>
+                </tr>
+                <tr>
+                        <td>Item1</td>
+                        <td>Item2</td>
+                </tr>
+                <tr>
+                        <td>Item1</td>
+                        <td>Item2</td>
+                </tr>
+                <tr>
+                        <td>Item1</td>
+                        <td>Item2</td>
+                </tr>
+                <tr>
+                        <td>Item1</td>
+                        <td>Item2</td>
+                </tr>
+                <tr>
+                    <td>Item1</td>
+                    <td>Item2</td>
+            </tr>
+            <tr>
+                    <td>Item1</td>
+                    <td>Item2</td>
+            </tr>
+            <tr>
+                    <td>Item1</td>
+                    <td>Item2</td>
+            </tr>
+            <tr>
+                    <td>Item1</td>
+                    <td>Item2</td>
+            </tr>
+            <tr>
+                    <td>Item1</td>
+                    <td>Item2</td>
+            </tr>
+            </table>
+
+
+    </main>
+</body>
+</html>

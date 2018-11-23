@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+
+
+<head>
+	
+	<meta charset="utf-8">
+
+</head>
+
+<html>
+
+
+	<body>
+
+
+
+		<!--[if !mso]><! On initie les tableaux si pas MSO si MSO voir code sous condition -->
+		<style type="text/css">table{border-spacing: 0;} table td {border-collapse: collapse;}</style>
+		<!--<![endif]-->
+
+		<!--[if [if mso]>
+			<style type="text/css">table{border-spacing: 0;	} table td {border-collapse: separate;}</style>
+		<![endif]-->
+
+
+
+		<style type="text/css">
+			@media only screen and (max-width: 480px) { 
+				td[class="1col"]{ 
+			        width:100% !important; 
+			        display:block;
+			    }
+			}
+		</style>
+
+
+
+
+
+		<h1>Exemple de montage de 3 colonnes en tableaux imbriqués</h1>
+		<hr>
+
+		<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width:590px !important; width: 100%;">
+		    <tbody><tr>
+
+		        <td class="1col"  width="33%"  align="center" valign="top" bgcolor="#ff0000" style="background-color:#ff0000;">
+	        	
+
+				<!--[if mso]>
+	                <table align="center" border="0" cellspacing="0" cellpadding="0" width="590" style="width:590px;">
+	                 <tbody><tr>
+	                <td align="center" valign="top" width="590" style="width:590px;">
+				<![endif]-->
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%;">
+							 <tbody><tr>
+
+					        	<td class="1col" align="center" valign="top" style="font-family:arial">imbrique 1</td>
+
+							
+
+					        	<td class="1col" align="center" valign="top" style="font-family:arial">imbrique 1</td>
+					    
+					    	</tr></tbody>
+					    </table>
+
+				<!--[if mso]>
+				    </td></tr></tbody></table>                        
+				<![endif]-->
+
+
+		        </td>
+		    
+
+
+		        <td class="1col" width="33%" align="center" valign="top" bgcolor="#f1f1f1" style="background-color:#f1f1f1; ">
+	        	
+
+				<!--[if mso]>
+	                <table align="center" border="0" cellspacing="0" cellpadding="0" width="590" style="width:590px;">
+	                 <tbody><tr>
+	                <td align="center" valign="top" width="590" style="width:590px;">
+				<![endif]-->
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%;">
+							 <tbody><tr>
+
+					        	<td class="1col" align="center" valign="top" bgcolor="#f1f1f1" style="background-color:#f1f1f1; font-family:arial">imbrique 2</td>
+
+							</tr><tr>
+
+					        	<td class="1col" align="center" valign="top" bgcolor="#f1f1f1" style="background-color:#f1f1f1; font-family:arial">imbrique 2</td>
+					    
+					    	</tr></tbody>
+					    </table>
+
+				<!--[if mso]>
+	                  </td></tr></tbody></table>                        
+				<![endif]-->
+
+
+		        </td>
+		    
+
+
+		        <td class="1col" width="33%" align="center" valign="top" bgcolor="#f1f1f1" style="background-color:#f1f1f1;">
+	        	
+
+				<!--[if mso]>
+	                <table align="center" border="0" cellspacing="0" cellpadding="0" width="590" style="width:590px;">
+	                 <tbody><tr>
+	                <td align="center" valign="top" width="590" style="width:590px;">
+				<![endif]-->
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor:"#dddddd" style="background-color:#dddddd; width: 100%;">
+							 <tbody><tr>
+
+					        	<td class="1col" align="center" valign="top" style="font-family:arial">imbrique 3</td>
+
+							
+
+					        	<td class="1col" align="center" valign="top" style="font-family:arial">imbrique 3</td>
+					    
+					    	</tr></tbody>
+					    </table>
+
+				<!--[if mso]>
+				    </td></tr></tbody></table>                        
+				<![endif]-->
+
+
+
+	        	</td>
+ 			</tr><tr>
+	        	<td  colspan="3" height="30px"></td>
+ 			</tr><tr>
+	        	<td colspan="3" style="font-family:arial">
+
+	        		<ul>
+	        			<b>En emailing, qques règles simples : </b>
+	        			<li>On travaille sur un max-width en général de 590px sur les desktop</li>
+	        			<li>On oublie toute sorte de montage sauf le montage en tableaux imbriqués</li>
+	        			<li>On peut utiliser balises des DIV ou des UL mais dans l'utilisation initiale</li>
+	        			<li>On reste le plus simple possible au niveau maquette et on travaille au maximum sur des blocs qui occupe toute la largeur</li>
+	        			<li>On essaye de traiter les images en 1 bloc et si possible sur la largeur max</li>
+	        			<li>On évite voire on oublie les background-image sur un conteneur (table)</li>
+	        			<li>On met le CSS en ligne doublé par les anciens attributs HTML</li>        		
+	        			<li>On fait attention de fermer/ouvrir les balises de montage type block < tr > ou < div > ou < img> , exemple : < / tr >< tr > ou < td>< img src="lienImage">< /td>(evite le pb d'espaces gérés sur certains webmail comme pour les balises "inline" connu surtout en le "display:inline-block")</li>
+	        			<li>On gère les espaces entre blocs par une ligne tableau car par margin c'est impossible</li>
+	        			<li>Si on doit travailler des images découpées les unes en dessous des autres plaquer un display:block pour éviter les espaces entre elles.</li>
+	        			<li>Attention à Outlook (pas outlook-express qui lui accepte tout mais plus vraiment utilisé maintenant). Sans entrer dans les détails de OE, on re force la taille < td > par des conditions windows (voir code html) à chaque tableau imbriqué et on ré aligne au niveau vertical.</li>
+						<li> Votre DOCTYPE document, même si la plupart des webMails ne l'utiliseront pas (en effet seuls les lecteurs d'email utilisant un iFrame en tiendront compte) ils utiliseront le leur qui à l'heure actuelle est en html5. Donc sans vous casser la tête utilisez le également pour votre document.</li>
+						<li>Comme nous ne savons pas sur quel Doctype nous appuyer, fermez vos balises unique (< br> ou < img> ou < hr>) de cette façon : < br /> au cas où nous serions sur XHTML</li>
+
+					</ul>
+
+					<p>
+						<b>Complèments :</b> <br>						
+						- Comme on écrit le CSS en ligne la plupart des propriétés seront acceptées sans pbs comme un border-radius ou un box-shadow. On évitera néamoins de surcharger le CSS en ligne et on évitera les propriétés faisant appel à des fonctions complexes. On reste au maximum "simple" et à "l'ancienne".<br>
+						- Le raccourci CSS "font" gérant les fonts est à bannir. <br>
+
+						
+
+					</p>
+
+					<p> <b>Pour finir :</b><br>
+						- Il existe d'autres méthodes ou d'autres points qui peuvent, suivant les webmails, poser des pbs d'affichage. Ces règles simples ci-dessus permettent de passer à l'heure actuelle sur la plupart des clientMails et webMails. Il existe de nombreux sites qui parlent d'emailing, des choses à faire et ne pas faire. Le gros pb c'est que les choses évoluent rapidement et pas à la même vitesse et même pas de la même façon suivant les webmails (où serait le plaisir sinon...)</br>
+						- <b>Enfin dites-vous que le "AU PIXEL PRET" </b>est encore plus une UTOPIE en emailing que en site RWD standard.
+					</p>
+
+
+					<hr>
+
+					<p>
+
+						<ul> <h2>LISTE D'ANCIENS ATTRIBUT HTML POUR LES TABLEAUX</h2>
+							<li>
+								<code>valign="top"</code>&nbsp;ou <code>valign="bottom"</code> pour choisir l’alignement du contenu en haut ou bas de cellule <code>&lt;td&gt;</code></li>
+							<li>
+								<code>bgcolor</code> pour donner une couleur de fond à la cellule&nbsp;<span style="color: rgb(118, 151, 18); font-family: monospace; font-size: 14px;">&lt;td&gt;</span></li>
+							<li>
+								<code>border</code> pour définir la largeur des 4 bordures (zéro équivalant à pas de bordure) et <code>bordercolor</code> pour définir une couleur de bordure (il n’est pas possible de ne définir qu’une bordure des 4 bordures à la fois)</li>
+							<li>
+								<code>cellpadding="0"&nbsp;</code>pour définir un espacement de zéro entre le contenu de la cellule et sa bordure et <code>cellspacing="0"&nbsp;</code>&nbsp;pour définir un espacement de zéro entre les différentes cellules.</li>
+							<li>
+								<code>colspan="<em>X</em>"</code> pour fusionner <em>X</em> cellules</li>
+							<li>
+								<code>align="left"</code>&nbsp;ou&nbsp;<span style="color: rgb(118, 151, 18); font-family: monospace; font-size: 14px;">align="right"</span>&nbsp;ou <code>align="center"</code>&nbsp;pour aligner le texte</li>
+						</ul>
+
+					</p>
+
+	        	</td>
+	       	
+	    
+	   		</tr></tbody>
+
+	   	</table>
+
+	</body>
+
+</html>

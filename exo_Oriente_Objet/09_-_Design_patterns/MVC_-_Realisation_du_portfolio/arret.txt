@@ -1,0 +1,5 @@
+J'ai fini l'ajout de Page via Posts ! 
+
+Demain matin faire le EDIT de pages dans le fichiers PostsModel.php  ! 
+
+et une fois fini juste a Dupliquer partout !!!!!!!!!!!!!!!!

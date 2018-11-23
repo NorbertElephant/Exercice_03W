@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fuck_Animation</title>
+</head>
+<body>
+
+    <style>
+        .poing{
+            position: relative;
+            height: 200px;
+            width: 275px;
+            margin: 2em auto;
+            background: darksalmon;
+            opacity: 0.8;
+            border: solid 1px #000;
+            border-radius: 50% 50% 50% 50%;
+            margin-top: 300px; 
+            perspective: 600px;
+            transform-style: preserve-3d;
+            /* overflow: hidden; */
+        }
+        
+        .doigt1, .doigt2, .doigt3, .doigt4, .doigt5{
+            position: absolute;
+            top: 0;
+            right: 45%;
+            border-radius: 50% 50% 0 0;
+            border-top: solid 1px #000;
+            border-left: solid 1px #000;
+            border-right: solid 1px #000;
+            background: darksalmon;
+            height: 80px;
+            width: 80px;
+
+        } 
+        .doigt1{
+            left: -3px;
+            top:15px;
+            width: 50px;
+            height: 100px;
+            border-radius: 80% 50% 50% 80%;
+            border: solid 1px #000;
+            transform: rotateZ(60deg);
+        }
+        .doigt2{
+            left: 35px;
+            top:-10px;
+            width:70px;
+            transform: rotateZ(-20deg)
+        }
+        .doigt3{
+            top: -40px;
+            right: 42%;
+            transform: rotateZ(0.01deg);
+            transition: 1s;
+            animation: Fuck 1s ease infinite ;
+        }
+       
+        .doigt4{
+            top: -25px;
+            right: 22%;
+            width:60px;
+            height: 80px;;
+            transform: rotateZ(0.01deg);
+        }
+        .doigt5{
+            top: 10px;
+            width:50px;
+            height: 55px;;
+            right: 5%;
+            transform: rotateZ(10deg);
+        }
+           
+
+        /* .poing:hover .doigt3{
+            top: -150px;
+            height: 180px;
+            transform: translateY(-20px);
+            transition: 1s,
+        } */
+
+        @keyframes Fuck{
+            0%{
+                top: -40px;
+                right: 42%;
+                transform: rotateZ(0.01deg);
+            }
+            100%{
+                top: -120px;
+                height: 200px;
+                transform: translateY(-20px);
+            }
+        }
+
+
+        
+    </style>
+
+
+    <div class="poing">
+        <div class="doigt1"></div>
+        <div class="doigt2"></div>
+        <div class="doigt3"></div>
+        <div class="doigt4"></div>
+        <div class="doigt5"></div>
+    </div>
+
+
+    <!-- Stickman Animation -->
+    <style>
+        .stickman {
+            height: 300px;
+            width: 300px;
+            position: relative;
+            transform-origin: 0 0;
+            animation: stickman 3s linear infinite alternate;
+            animation-play-state: paused
+        }
+        .tete {
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            left: 50%;
+            background: #000;
+            border-radius: 50%; 
+        }
+        .Corps {
+            position: absolute;
+            left: 57.5%;
+            top: 25px;
+            width: 25px;
+            height: 100px;;
+            border-left: solid 5px #000;
+        }
+        
+        .stickman:hover{
+            animation-play-state: running;
+        }
+        @keyframes stickman{
+            0%{
+                left: 0;
+            }
+            100%{
+                left: 50%
+            }
+        }
+
+        
+        /* ***************Bras****************** */ 
+        .AVBrasG{
+            position: absolute;
+            top:80px;
+            left:47.5%;
+            width: 30px;
+            border-bottom: solid 5px #000;
+        }
+        .ABrasG{
+            position: absolute;
+            top:72px;
+            left: 44.5%;
+            width: 20px;
+            border-bottom: solid 5px #000;
+            transform: rotateZ(90deg);
+            animation: ABrasG 5s linear infinite alternate;
+        }
+        
+        @keyframes ABrasG {
+            0%{
+                transform: rotateZ(90deg);
+                left: 44.5%;
+                top:72px;
+            }
+            20%{
+                transform: rotateZ(0deg);
+                left:41%;
+                top:80px;
+            }
+            40%{
+                transform: rotateZ(90deg);
+                left: 44.5%;
+                top:72px;
+            }
+            60%{
+                transform: rotateZ(0deg);
+                left:41%;
+                top:80px;
+            }
+            80%{
+                transform: rotateZ(90deg);
+                left: 44.5%;
+                top:72px;
+            }
+            100%{
+                transform: rotateZ(0deg);
+                left:41%;
+                top:80px;
+            }
+        }
+
+         .AVBrasD{
+            position: absolute;
+            top:80px;
+            left:59%;
+            width: 30px;
+            border-bottom: solid 5px #000;
+        }
+        .ABrasD{
+            position: absolute;
+            top:72px;
+            left:66%;
+            width: 20px;
+            border-bottom: solid 5px #000;
+            transform: rotateZ(90deg);
+            animation: ABrasD 5s linear infinite alternate;
+        }
+        @keyframes ABrasD {
+            0%{
+                transform: rotateZ(-90deg);
+                left:66%;
+                top:72px;
+            }
+            20%{
+                transform: rotateZ(0deg);
+                left:69%;
+                top:80px;
+            }
+            40%{
+                transform: rotateZ(-90deg);
+                left:66%;
+                top:72px;
+            }
+            60%{
+                transform: rotateZ(0deg);
+                left:69%;
+                top:80px;
+            }
+            80%{
+                transform: rotateZ(-90deg);
+                left:66%;
+                top:72px;
+            }
+            100%{
+                transform: rotateZ(0deg);
+                left:69%;
+                top:80px;
+            }
+        }
+
+
+
+        /* *****************Pieds************* */ 
+      
+        .PiedG{
+            position: absolute;
+            top:157px;
+            left: 43.7%;
+            width: 15px;
+            border-bottom: solid 5px #000;
+        }
+        .CuisseG{
+            position: absolute;
+            top:127px;
+            left: 50.7%;
+            width: 25px;
+            border-bottom: solid 5px #000;
+            transform: rotateZ(-45deg);
+        }
+        .TibiaG{
+            position: absolute;
+            top:145px;
+            left: 46%;
+            width: 25px;
+            border-bottom: solid 5px #000;
+            transform: rotateZ(-60deg);
+        }
+
+        .PiedD{
+            position: absolute;
+            top:155px;
+            left: 66%;
+            width: 15px;
+            border-bottom: solid 5px #000;
+        }
+        .CuisseD{
+            position: absolute;
+            top:126px;
+            left: 56.7%;
+            width: 25px;
+            border-bottom: solid 5px #000;
+            transform: rotateZ(45deg);
+        }
+        .TibiaD{
+            position: absolute;
+            top:143px;
+            left:61%;
+            width: 25px;
+            border-bottom: solid 5px #000;
+            transform: rotateZ(60deg);
+        }
+
+
+
+    </style>
+
+    <div class="stickman"> 
+        <div class="tete"></div>
+        <div class="Corps"></div>
+        <div class="BrasG">
+            <div class="AVBrasG"></div>
+            <div class="ABrasG"></div>
+        </div>
+        <div class="BrasD">
+            <div class="AVBrasD"></div>
+            <div class="ABrasD"></div>
+        </div>
+        <div class="JambeD">
+            <div class="CuisseD"></div>
+            <div class="TibiaD"></div>
+            <div class="PiedD"></div>
+        </div>
+        <div class="JambeG">
+            <div class="CuisseG"></div>
+            <div class="TibiaG"></div>
+            <div class="PiedG"></div>
+        </div>
+    </div>
+
+
+</body>
+</html>

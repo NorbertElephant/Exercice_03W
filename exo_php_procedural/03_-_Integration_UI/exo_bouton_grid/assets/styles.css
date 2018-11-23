@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css?family=Jura:300,400");
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #DAEAEF;
+    font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
+}
+body .container h2 {
+    text-align: center;
+    font-family: jura;
+    font-size: 5rem;
+    color: rgb(44, 54, 58);
+    font-weight: 400;
+}
+
+body .container form {
+    border-top: 2px solid #9DBDC6;
+    border-left: 1px solid #9DBDC6;
+    border-right: 1px solid #9DBDC6;
+    border-bottom: 2px solid #9DBDC6;
+    display: grid;
+    margin: auto;
+    width: 40rem;
+    grid-template-columns: 2fr 2fr 2fr 1fr 1fr 1fr 2fr 2fr 2fr;
+    grid-template-rows: repeat(9, 1.33rem);
+    background-color: rgba(63, 63, 63, 0);
+    grid-template-areas: 
+        "pr pr pr pr pr ps ps ps ps ps"  
+        "pr pr pr pr pr ps ps ps ps ps" 
+        "pr pr pr pr pr ps ps ps ps ps" 
+        "ag ag ag ag ag em em em em em"  
+        "ag ag ag ag ag em em em em em" 
+        "ag ag ag ag ag em em em em em" 
+        "pw pw pw pw pw wt wt wt wt wt" 
+        "pw pw pw pw pw wt wt wt wt wt" 
+        "pw pw pw pw pw wt wt wt wt wt"  
+        ; 
+    box-shadow: 0 4rem 4rem rgba(39, 47, 50, 0.5);
+    -webkit-transition: all .15s ease-in-out;
+            transition: all .15s ease-in-out;
+    border-radius: 0.66667rem;
+    overflow: hidden;
+}
+
+body .container form input {
+    display: block;
+    grid-column: span 3;
+    grid-row: span 3;
+    outline: none;
+    font-family: Jura;
+    font-size: 1.4rem;
+    text-align: center;
+    border: 1px solid rgb(56, 67, 72, .3);
+    background-color: rgb(39, 47, 50);
+    -webkit-transition: background-color .1s ease-in-out;
+            transition: background-color .1s ease-in-out;
+    color: #DAEAEF;
+}
+
+body .container form input::placeholder {
+    color: #9DBDC6;
+  }
+  
+  /* body .container form input:nth-of-type(3n+2) {
+    background-color: #9DBDC6;
+  } */
+  
+ /*  body .container form input:nth-of-type(3n+1)::placeholder {
+    color: #272F32;
+  }
+  
+  body .container form input:nth-of-type(3n+1):focus ~ button {
+    background-color: #272F32;
+  } */
+  
+  body .container form input:hover {
+    background-color: rgba(255, 60, 46, 1);
+  }
+  
+  body .container form input:hover::placeholder {
+    color: #FFF;
+  }
+  
+  /* body .container form input:hover ~ button {
+    background-color: #9DBDC6;
+  } */
+  
+  body .container form input:focus {
+    background-color: #FFF;
+    color: #FF3D2E;
+  }
+
+body .container form input#prenom:valid ~ button {
+  grid-area: pr;
+  /* padding-left: 8%; */
+  padding-right: 50%;
+}
+
+body .container form input#prenom:valid ~ button {
+  border-left: 0.2rem solid #1f4;
+}
+
+body .container form input#pseudo {
+  grid-area: ps;
+  /* padding-left: 50%; */
+  padding-right: 50%;
+}
+
+body .container form input#pseudo:valid ~ button {
+  border-right: 0.2rem solid #1f4;
+}
+
+body .container form input#age {
+    grid-area: ag;
+    padding-right: 50%;
+    /*padding-right: 16%; */
+  }
+  
+  body .container form input#age:valid ~ button {
+    border-left: 0.2rem solid #1f4;
+  }
+  
+  body .container form input#email {
+    grid-area: em;
+    /* padding-left: 16%;
+    padding-right: 8%; */
+  }
+  
+  body .container form input#email:valid ~ button {
+    border-top: 0.2rem solid #1f4;
+  }
+
+body .container form input#password {
+  grid-area: pw;
+  padding-right: 50%;
+  /*padding-right: 16%; */
+}
+
+body .container form input#password:valid ~ button {
+  border-bottom: 0.2rem solid #1f4;
+}
+
+body .container form input#password-test {
+  grid-area: wt;
+  /* padding-left: 16%;
+  padding-right: 8%; */
+}
+
+body .container form input#password-test:valid ~ button {
+  border-right: 0.2rem solid #1f4;
+}
+
+body .container form button.submit {
+  overflow: hidden;
+  grid-column: 4/7;
+  grid-row: 1/10;
+  border: 1px solid rgba(0, 0, 0, 0);
+  /* border-radius: 40%; */
+  -webkit-transition: all .15s ease-in-out;
+          transition: all .15s ease-in-out;
+  -webkit-transform: rotate(0deg) scale(1);
+      -ms-transform: rotate(0deg) scale(1);
+          transform: rotate(0deg) scale(1);
+  background-color:rgba(63, 63, 63, 0);
+  cursor: pointer;
+}
+i {
+  z-index: 100;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+body .container form button.submit::before,body .container form button.submit::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+}
+.submit::before{
+  bottom: 41%;
+  left: -70%;
+  border-bottom: 86.60px solid #64C7CC;
+}
+.submit::after{
+  top: 37%;
+  width: 0;
+  left: -70%;
+  border-top: 86.60px solid #64C7CC;
+}

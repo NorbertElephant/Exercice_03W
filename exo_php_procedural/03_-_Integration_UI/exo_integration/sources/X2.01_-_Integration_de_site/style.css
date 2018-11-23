@@ -1,0 +1,193 @@
+
+body{
+    position: relative;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    background: #f0efe0;
+}
+header{
+    background: #fff;
+    height: 7em;
+}
+main {
+    position: relative;
+    top: 3.5em;
+}
+section {
+    position: relative;
+    width: 61em;
+    left: 30em;
+    padding-top: 4em;
+    background: #f1f0e2;
+    border: solid 1px #e6e3d4;
+    
+}
+
+footer{
+    position: absolute;
+    left: 30em;
+}
+a {
+    color: #491701;
+}
+h2 {
+    color: #523c2f;
+    font-size: 1.5em;
+}
+p{
+    color: #7b5a47
+}
+span{
+    line-height: 2em;
+}
+
+.content-left{
+    float: left;
+    width: 40em;
+    margin-right: 4em;
+    top: 0;
+}
+.content-right{
+    float: right;
+    width: 16em;
+    top: 0;
+   
+}
+
+.stopFloat::after{
+    content:'';
+    clear: both;
+    margin: 0;
+}
+hr{
+    color: #d4cfc3;
+    margin-top: 4em;
+    width: 75%;
+}
+
+
+/* Header du Site Internet  */
+.banniere{
+    height: 1.9em;
+    background: url("../X2.01_-_Integration_de_site/images/crisp_home_02.png") ;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    float: left;
+    height: 3.5em;
+    width: 30em;
+    background: no-repeat url("../X2.01_-_Integration_de_site/images/crisp_home_09.png");
+    margin-left: 30em;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    width: 30%;
+    background: #f2f0e2;
+    border: solid 1px #ded5cf ;
+    border-radius : 5px;
+    word-spacing: 4em;
+    justify-content: center;
+    margin-right: 10em;
+}
+.nav li {
+    display: inline-block;
+    list-style-type: none;
+    border-right: solid 2px #fff;
+}
+.nav a{
+    text-decoration-line: none;
+    text-align: center;
+}
+
+.nav:active{
+    color: #d17b00;
+}
+
+
+/* Corps du Site Internet */
+
+.slider{
+    position: relative;
+    box-shadow: inset 1em 15em #e3decf;
+    height: 200px;
+    margin-top: -3.5em;
+}
+.slider img{
+    position: absolute;
+    left: 31em;
+    display: block;
+}
+.btn-left{
+    display: block;
+    position: absolute;
+    float: left;
+    height: 3.8em;
+    width: 7.5vh;
+    left: 28em;
+    top : 5em; 
+    background: no-repeat url("../X2.01_-_Integration_de_site/images/crisp_home_left.png");
+}
+.btn-right{
+    display: block;
+    position: absolute;
+    float: right;
+    height: 3.8em;
+    width: 7.5vh;
+    right: 43em;
+    top : 5em; 
+    background: no-repeat url("../X2.01_-_Integration_de_site/images/crisp_home_right.png");
+}
+
+.content-1{
+    height: 24em;
+    border-bottom: none;
+}
+.content-1 > p{
+    width: 21em;
+}
+
+.Tugudu{
+    margin-left: -1.9em;
+    margin-top: 4em;
+    height: 6.5em;
+}
+
+.article{
+    position: relative;
+    float: right;
+    width: 24em;
+    top: -9.6em;
+}
+
+.content-2{
+    height: 40em;
+    padding-top: 0;
+    padding-top:none;
+    border-top: none
+}
+
+.contact-text{
+    position: absolute;
+    top: 6.2em;
+    left: 2.2em;
+    width: 13em;
+    line-height: 1.2em;
+    border: none;
+}
+
+.contact{
+    position: relative;
+    height: 100%;
+    padding-top: 2em;
+}
+.img-border{
+    position: absolute;
+    left: 1em;
+    top: 7em;
+}

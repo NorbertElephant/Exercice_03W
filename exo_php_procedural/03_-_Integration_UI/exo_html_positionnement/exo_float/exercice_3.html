@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercice 3</title>
+</head>
+<body>
+        <hr />
+        <h2>Exercice 3</h2>
+        <img alt="Exercice 3 - Le positionnement CSS" src="assets/images/07.03_-_Le_positionnement_CSS.jpg" />
+            
+        
+            <div style="height: 40em; width: 100%;margin: 0px;clear: both;">
+                 
+                <div style="
+                    background-color: green;
+                    float: left;
+                    width: 20%;
+                    height: 100%;">SIDEBARLEFT</div>
+
+                    <div style="
+                    background-color: darkorange;
+                    float: right;
+                    width: 20%;
+                    height: 100%; "> SideBarRight</div>
+
+                    <div style="
+                        background-color: purple; 
+                        float: left ;
+                        width: 60%; 
+                        height: 40%; 
+                        "> HEADER</div>
+
+                    
+
+                <div style="height: 60%; width: 60%; float: left;">
+                    
+                
+                    <div style="
+                        background-color: yellow;
+                        float: left;
+                        width: 40%;
+                        height: 100%;"
+                            >CONTENT</div>
+
+
+                    <div style="
+                    background-color: orangered;       
+                    float: right;
+                    width: 60%;
+                    height: 100%; "
+                    >FOOTER</div>
+
+            </div>
+           </div>
+
+           <hr>
+
+           <style>
+                .Conteneur{
+                    width: 100%;
+                    height: 40em;
+                    display: grid;
+                    grid-template-columns: 2fr 2fr 2fr 2fr;
+                    grid-template-rows: 1fr 1fr;
+                    grid-template-areas: 
+                        'Nav Head Head Aside'
+                        'Nav Main Footer Aside'
+                    
+                }
+                .Head{
+                    background: purple;
+                    grid-area: Head
+                }
+                .Nav{
+                    background: green;
+                    grid-area: Nav
+                }
+                .Aside{
+                    background: darkgoldenrod;
+                    grid-area: Aside
+                }
+                .Main{
+                    background: yellow;
+                    grid-area: Main
+                }
+                .Footer{
+                    background: orangered;
+                    grid-area: Footer
+                }
+            </style>
+    
+            <h2>Montage en GRID </h2>
+            
+            <div class="Conteneur">
+                <div class="Head"> HEADER</div>
+                <div class="Nav">NAV</div>
+                <div class="Aside"> ASIDE</div>
+                <div class="Main">CONTENT</div>
+                <div class="Footer">FOOTER</div>
+            </div>
+        
+</body>
+</html>
+
+
+

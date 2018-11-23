@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exo_transition</title>
+</head>
+
+<style>
+    .conteneur{
+        width: 200px;
+        height: 400px;
+        margin: 2em auto;
+        background: black;
+        border: solid 3px black;
+        perspective: 600px;
+        transform-style: preserve-3d;
+        
+    }
+    .transf{
+        width: 190px;
+        height: 395px;
+        margin-top: 0.2em;
+        background: #ccc;
+        border-left: dashed 6px #666666;  
+        transform-origin: 0 0;
+        transition: transform 4s 1s;
+        transition-timing-function: ease;
+        transform:  rotate3d(0,1,0,.001deg);
+
+    }
+
+    .conteneur:hover .transf{
+        transform:  rotate3d(0,1,0,-160deg);
+        transition: transform 1s 4s; 
+        transition-timing-function: ease-out;
+    }
+    .transf::after{
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background: #666666;
+        border-radius: 10px;
+        top: 50%;
+        left: 80%;
+    }
+
+</style>
+<body>
+        <h2>Ex. 1 : Ouvrir la porte</h2>
+        <p>Pour cet exercice :</p>
+        <ul>
+            <li>nous allons utiliser les transformations et les transitions pour ouvrir la porte (dans le bon sens).</li>
+            <li>le survol de la souris représentera le fait que nous frappions à la porte et nous attendrons 4 secondes avant que quelqu'un nous ouvre.</li>
+            <li>la porte mettra 1 seconde à s'ouvrir entièrement de manière linéaire.</li>
+            <li>la porte mettra 4 secondes à se refermer entièrement après un délai de 2 secondes le temps de passer.</li>
+            <li>le début de la fermeture se fera doucement puis accélèrera avant de ralentir sur la fin.<br /><em style="font-size:smaller;">information supplémentaire: il est possible d'indiquer des transitions différentes sur l'élément et sur son survol.</em></li>
+        </ul>
+   <main>
+       <div class="conteneur">
+           <div class="transf"></div>
+       </div>
+   </main>
+    
+</body>
+</html>

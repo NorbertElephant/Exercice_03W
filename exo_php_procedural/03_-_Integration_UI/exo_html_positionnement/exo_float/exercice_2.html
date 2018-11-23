@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercice 2</title>
+</head>
+<body>
+        <hr />
+        <h2>Exercice 2 Montage FLOAT</h2>
+                <img alt="Exercice 2 - Le positionnement CSS" src="assets/images/07.02_-_Le_positionnement_CSS.jpg" />
+        
+                <div style="height: 40em; width: 100%;">
+                    <div style="
+                    background-color: purple; 
+                    width: 100%; 
+                    height: 25%; 
+                    "> HEADER</div>
+                    <div style="width: 100%; height: 65%;">
+                        <div style="
+                        background-color: green;
+                        float: left;
+                        width: 25%;
+                        height: 100%;">SIDEBARLEFT</div>
+                        <div style="
+                        background-color: yellow;
+                        float: left;
+                        width: 50%;
+                        height: 100%;" >CONTENT</div>
+                        <div style="
+                        background-color: darkgoldenrod;
+                        float: left;
+                        width: 25%;
+                        height: 100%;" >SIDEBARRIGHT</div>
+                    </div>
+                    <div style="
+                    background-color: orangered;
+                    clear: both;
+                    width: 100%;
+                    height: 10%;">FOOTER</div>
+                </div>
+    
+            <hr>
+
+
+            <style>
+                    .Conteneur{
+                        width: 100%;
+                        height: 40em;
+                        display: grid;
+                        grid-template-columns: 2fr 4fr 2fr;
+                        grid-template-rows:  repeat(3, 3fr) 1fr;
+                        grid-template-areas: 
+                            'Head Head Head'
+                            'Nav Main Aside'
+                            'Nav Main Aside'
+                            'Footer Footer Footer'
+                    }
+                    .Head{
+                        background: purple;
+                        grid-area: Head
+                    }
+                    .Nav{
+                        background: green;
+                        grid-area: Nav
+                    }
+                    .Aside{
+                        background: darkgoldenrod;
+                        grid-area: Aside
+                    }
+                    .Main{
+                        background: yellow;
+                        grid-area: Main
+                    }
+                    .Footer{
+                        background: orangered;
+                        grid-area: Footer
+                    }
+                </style>
+        
+                <h2>Montage en GRID </h2>
+                
+                <div class="Conteneur">
+                    <div class="Head"> HEADER</div>
+                    <div class="Nav">NAV</div>
+                    <div class="Aside"> ASIDE</div>
+                    <div class="Main">CONTENT</div>
+                    <div class="Footer">FOOTER</div>
+                </div>
+
+</body>
+</html>
+
+   

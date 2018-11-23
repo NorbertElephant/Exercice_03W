@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exo_animation_1</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h2>Exercice 1 : Square to circle - Déformation d'un élément</h2>
+            <p>
+                    Reproduire sur le seul cadre présent et en animation les différentes formes enchainées dans l'image 
+            </p>
+        </div>
+
+
+        <style>
+            .carre{
+                height: 200px;
+                width: 200px;
+                top: 20%;
+                position: relative;
+                background: #000;
+                margin: 1em auto;
+                transition-duration: 10s;
+
+
+                 /* Version raccourcie */ 
+            animation: changeform 10s linear infinite ; 
+          
+            }
+
+            @keyframes changeform {
+                0%{
+                    border-radius: 0%;
+                   transform: rotateZ(0deg);
+                }
+                20%,25%{
+                    transform: rotateZ(45deg);
+                    border-radius : 50% 0% 0% 0%;
+                }
+                45%,50%{
+                    transform: rotateZ(90deg);
+                    border-radius : 50% 50% 0% 0%;
+                }
+                70%,75%{
+                    transform: rotateZ(135deg);
+                    border-radius : 50% 50% 50% 0%;
+                }
+                90%,95%{
+                    transform: rotateZ(180deg);
+                    border-radius: 50%;
+                } 
+                100%{
+                    border-radius: 0%;
+                }
+            }
+        </style>
+        
+        <div class="carre">
+        </div>
+
+
+    </main>
+    
+</body>
+
+
+</html>

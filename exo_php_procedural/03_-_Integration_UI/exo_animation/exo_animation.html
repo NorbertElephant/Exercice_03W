@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exo_animation</title>
+</head>
+<body>
+    <main>
+    <style>
+         .div {
+            background-color:lightblue;
+            display:inline-block;
+            height:150px;
+            margin:15px;
+            position:relative;
+            width:150px;
+            /* Version Longue de l'animation */
+                animation-name:moveleft; /* Défini le nom de la règle @keyframes décrivant les keyframes de l'animation. */  
+                animation-duration:2s; /* Configure la durée que l'animation doit utiliser pour compléter un cycle. */
+                animation-timing-function:ease-in-out; /* ease |e ase-in-out |...*/ 
+                animation-iteration-count:infinite; /* nombre | infinite */
+                animation-direction:alternate; /* normal | alternate | reverse | alternate-reverse */
+
+            /* Version raccourcie d'en haut */ 
+            animation: moveleft 2s ease-in-out infinite alternate; 
+}
+        .div:hover {
+            animation-play-state:paused; /* running | paused */
+        }
+
+        @keyframes moveleft { /* Définition des règles à appliquer sur une échelle de temps (en pourcentage) */
+            0% { /* équivaut à from {} */
+                background-color: lightblue;
+                left:0;
+            }
+            25%{
+                background-color: lightcoral;
+                top: 50px;
+                height:100px;
+                width:100px;
+            }
+            50%{
+                background-color: lightgrey;
+                top: 100px;
+                height:75px;
+                width:75px;
+            }
+            75% { /* équivaut à to {} */
+                left:400px;
+                top: 150px;
+                height:100px;
+                width:100px;
+            }
+            100% { /* équivaut à to {} */
+                background-color: lightgreen;
+                left:400px;
+                top: 200px;
+                height:150px;
+                width:150px;
+            }
+        }
+       
+    </style>
+
+    <div class="div"></div> 
+
+    
+    </main>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blocs d'informations</title>
+</head>
+
+<style>
+
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between
+    }
+    .conteneur{
+        position: relative;
+        overflow: hidden;
+        width: 250px;
+        height: 250px;
+        background: #ccc;
+    }
+    .transf{
+        visibility: hidden;
+        position: absolute;
+        bottom: -100%;
+        background: rgba(0, 0,0, 0.5);
+        transition: 1s;
+    }
+
+    .conteneur:hover .transf{
+        visibility: visible;
+        bottom: 0;
+        transition: 0.3s;
+
+    }
+</style>
+<body>
+
+        </html>
+        <hr />
+        <h2>Ex. 2 : Blocs d'informations</h2>
+        <p>Pour cet exercice :</p>
+        <ul>
+            <li>nous allons utiliser les transformations et les transitions pour afficher le bloc d'informations sur l'image survolée.</li>
+            <li>le bloc est caché en bas de l'image par défaut.</li>
+            <li>le bloc doit s'afficher en glissant vers le haut.</li>
+            <li>le bloc doit mettre 0.3 secondes à s'afficher.</li>
+            <li>le bloc ne faisant pas 100% de la hauteur de l'image, il doit rester aligné en bas de l'image.</li>
+        </ul>
+        
+        <hr />
+        
+<section>
+        <div class="conteneur">
+                <div class="transf">
+                    Bonjour je m'appelle Billy Jhones et j'aime les carottes :D 
+                </div> 
+            </div>
+    
+            <div class="conteneur">
+                <div class="transf">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod earum repellendus, officia molestias sed non inventore nisi. Molestiae reprehenderit ipsum consequuntur nesciunt voluptatibus molestias illum numquam blanditiis minima. Ipsam, inventore.
+                </div>
+            </div>
+    
+        
+            <div class="conteneur">
+                <div class="transf">
+                        Bonjour je
+                </div>    
+            </div>
+       
+
+</section>
+        
+    
+</body>

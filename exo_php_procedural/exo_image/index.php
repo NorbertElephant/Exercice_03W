@@ -1,0 +1,1 @@
+<img name="Image1" src="image.php" /> 

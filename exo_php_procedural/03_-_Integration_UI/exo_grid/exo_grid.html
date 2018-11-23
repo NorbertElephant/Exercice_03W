@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exo_Grid</title>
+</head>
+<body>
+    <style>
+        body{
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 1fr 3fr 1fr ;
+                grid-template-columns: 1fr 3fr 1fr ;
+            -ms-grid-rows: 50px 150px 30px;
+                grid-template-rows: 50px 150px 30px; 
+            grid-template-areas: 
+                'header header header'
+                'menu main aside'
+                'menu footer footer';
+            margin: 2em auto;
+        }
+        header{
+            background: rgba(0,0,0,0.8);
+            grid-area: header;
+            -ms-grid-row: 1;
+            -ms-grid-row-span: 1;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 3;
+            grid-area: 1 / 1 / span 1 / span 3;
+            color: #fff;
+        }
+        nav {
+            background: rgba(15, 100, 1, 0.8);
+            grid-area: menu;
+            -ms-grid-row: 2;
+            -ms-grid-row-span: 2;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+            grid-area: 2 / 1 / span 2 / span 1;
+        }
+        main{
+            display: block;
+            display: -ms-block;
+            background: rgba(50,58,1,0.8);
+            grid-area: main;
+            -ms-grid-row: 2;
+            -ms-grid-row-span: 1;
+            -ms-grid-column: 2;
+            -ms-grid-column-span: 2;
+            grid-area: 2 / 2 / span 1 / span 2;
+            z-index: 2;
+           
+        }
+        aside{
+            background: rgba(1,10,80,0.8);
+            grid-area: aside;
+            -ms-grid-row: 2;
+            -ms-grid-row-span: 1;
+            -ms-grid-column: 3;
+            -ms-grid-column-span: 1;
+            grid-area: 2 / 3 / span 1 / span 1;
+        }
+        footer{
+            background: rgba(100, 5, 2, 0.8);
+            grid-area: footer;
+            -ms-grid-row: 3;
+            -ms-grid-row-span: 1;
+            -ms-grid-column: 2;
+            -ms-grid-column-span: 2;
+            grid-area: 3 / 2 / span 1 / span 2;
+        }
+       
+        body:hover header .masque{
+            visibility: visible;
+          
+        }
+
+      @media screen and (max-width:990px){
+            body{
+                    -ms-grid-columns: 1fr 3fr 1fr;
+                    grid-template-columns: 1fr 3fr 1fr;
+                    grid-template-areas: 
+                    'header header menu'
+                    'main main aside'
+                    'footer footer footer'; 
+            }
+        }
+
+        
+        @media screen and (max-width:768px){
+            body{
+                    -ms-grid-columns: 1fr 3fr 1fr;
+                    grid-template-columns: 1fr 3fr 1fr;
+                    -ms-grid-rows: 50px 150px 30px 30px;
+                    grid-template-rows: 50px 150px 30px 30px;
+                    grid-template-areas: 
+                    'header header menu'
+                    'main main main'
+                    'aside aside aside'
+                    'footer footer footer'; 
+            }
+        }
+        
+
+        div{
+            background: #ccc;
+            position: relative;
+            z-index: 5;
+        }
+        .div{
+            background: #000;
+            color: #ccc;
+            position: absolute;
+            top :120px;
+            z-index: 1;
+        }
+        .div2{
+            background: #555;
+            color: #000;
+            position: absolute;
+            top :120px;
+            z-index:2;
+            width: 200px;
+            height: 50px;
+        }
+    </style>
+
+    <header>Header </header>
+    <nav>Navigation (menu) </nav>
+    <main>Contenu principale (main)  </main>
+    <aside>Aside</aside>
+    <footer>Footer </footer>
+    
+       
+    <!-- <div>   
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolorem soluta corporis, deserunt est delectus voluptatum rem. Quas quo quidem possimus in eos odit inventore itaque optio nostrum! Porro, cum. <br>
+    </div>
+
+    <div class="div">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eveniet ab eligendi! Quos voluptas, quisquam cupiditate, sunt hic veritatis harum in nisi nulla atque, distinctio blanditiis? Voluptate tempora quibusdam accusamus!
+    </div>
+
+    <div class="div2">
+            Lorem ipsum do
+        </div> -->
+   
+
+
+</body>
+</html>

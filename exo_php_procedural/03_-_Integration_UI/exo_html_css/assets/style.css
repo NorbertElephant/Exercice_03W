@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+body{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-style: italic;
+}
+h2 {
+font-family: 'Roboto', Arial, Helvetica, sans-serif;
+text-align: center;
+font-size: 72px;
+font-weight: bold; 
+}
+
+h3 {
+font-family: Arial, Helvetica, sans-serif;
+color: blue;
+
+}
+
+
+section >p {
+font-family: 'Roboto', Arial, Helvetica, sans-serif;
+text-align: justify;
+background: no-repeat center fixed url(../images/img.jpg);
+}
+    
+h3 > p {
+font-family: Arial, Helvetica, sans-serif;
+text-align: justify;
+border: black solid 2px;
+border-top: none;
+padding-left: 15px;
+box-shadow: 2px 2px 2px 2px #021b98;
+border-radius: 0px 20px 0px 20px;
+}

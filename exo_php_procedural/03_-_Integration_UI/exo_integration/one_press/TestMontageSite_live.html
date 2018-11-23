@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Montage site</title>
+		<meta charset="utf-8">
+
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+		<style>
+
+			/* ATTENTION LE CODE N'EST PAS PREFIXE */
+
+
+			/* reset */ 
+			/* **************************************************** */
+			
+			body{margin:0; font-family: arial, tahoma, verdana; background: #fff; /*font-size:10px;*/}
+			*{box-sizing: border-box; outline: none;}
+			ul, li{padding: 0; margin: 0; list-style: none}
+
+			.stopFloat::after{ display:block; content:""; clear:both;}
+
+
+
+			/* commun site */
+			.centrageTaille{width:100%; max-width: 1140px; margin:0 auto;}
+
+
+			/* ************************************************************ */
+			/* HEADER */
+			/* ************************************************************ */
+			/*.header{  background: #ddd;}*/
+			.header .centrageTaille{ display:flex; justify-content:space-between; padding: 0 5%; height: 75px; align-items: center}
+
+	
+
+			/* MENU PRINCIPAL */
+			/* ***************************************** */
+
+			.nav .menu-checkbox:checked ~ .menu{ visibility: visible }
+			.nav .menu-checkbox{display: none}
+
+			.header .menu a{
+				text-transform: uppercase;
+				color: #000;
+				padding-left: 2%;
+			}
+
+			.header .menu a:hover{
+				color: #0cc;
+			}
+
+
+			/* commun */
+			.nav a{ text-decoration: none;}
+
+		
+
+			/* smartphone */
+				@media screen and (max-width:990px){					
+					.nav .menu{ visibility: hidden; position: absolute; right:0; width: 100%}
+					.nav a{ display: block; padding:0.8em 1em; border-bottom: 1px solid #aaa; background: rgba(0,0,0,0.8); color:#fff;}
+					.nav .iconeMenu{ width:40px; height:40px; background: rgba(0,0,0,.8); display: block; border-radius: 10px; position:relative;}
+					.nav .iconeMenu div{ width:26px; height:4px; background: #fff; position: absolute; top: 18px; left:7px;}
+					
+
+
+					.nav .iconeMenu div::before, .nav .iconeMenu div::after{ 
+						content: ""; 
+						position:absolute; 
+						width:100%; 
+						height:100%; 
+						background: #fff
+					}
+
+					.nav .iconeMenu div::before{top:-200%; transform-origin: 0 0; transition: 0.5s; }
+					.nav .iconeMenu div::after{top:200%; transform-origin: 0 0; transition: 0.5s;}
+
+
+
+/*					.nav .menu-checkbox:checked ~ .iconeMenu div{ background:rgba(0,0,0,0); }
+					.nav .menu-checkbox:checked ~ .iconeMenu div::before{ transform:rotate( 38deg); }
+					.nav .menu-checkbox:checked ~ .iconeMenu div::after{ transform:rotate( -38deg); }*/
+
+					.menu-checkbox:checked ~ .iconeMenu div{top:25%;  transition: 0.4s 0.4s; }
+					.menu-checkbox:checked ~ .iconeMenu div::after{ top:0; transition: all 0.4s; }
+					.menu-checkbox:checked ~ .iconeMenu div::before{ top:0; transition: all 0.4s; }
+
+
+
+				}
+
+
+				@media screen and (min-width:991px){
+					.iconeMenu{display:none;}		
+					.nav{ width:60%}
+					.nav .menu{ display:flex;}
+					.nav .menu a{flex:1 0 auto;}
+				}
+
+
+		</style>
+
+
+	</head>
+	<body>
+
+
+
+<style type="text/css">
+
+
+
+
+
+
+
+			
+
+
+
+			/* SI MONTAGE EN ABSOLUTE DU HEADER : 
+			La gestion en absolute des blocs nav et logo pose un pb si on veut qu'en menu reponsive < 990px le menu s'ouvre sur 100% du scrren car notre référence position ne se trouve pas sur le header */
+
+			/*			
+			.logo, .nav{ position:absolute;}
+			.logo{ left:3%; top:2%; }
+			.nav{ right:3%; top:2%; }
+			*/
+			
+
+
+/*			.header .centrageTaille{height:75px; display: flex; align-items:center; justify-content:space-between;}
+			.nav{ margin-right: 3%; }
+			.logo{ margin-left:3%; }*/
+
+
+
+
+</style>
+
+
+		<header class="header">
+					<div class="centrageTaille">
+							<div class="logo"><img src="./images/logo_02.png" alt=""></div>
+							<div class="nav">
+								<input type="checkbox" class="menu-checkbox" id="menu-checkbox">
+								<label for="menu-checkbox" class="iconeMenu"><div></div></label>
+								<nav class="menu">
+									<a href="">Features</a>
+									<a href="">About</a>
+									<a href="">Services</a>
+									<a href="">Showreel</a>
+									<a href="">Gallery</a>
+									<a href="">Team</a>
+									<a href="">News</a>
+									<a href="">Contact</a>
+									<a href="">Shop</a>
+								</nav>
+							</div>
+						</div>
+		</header>
+
+
+
+
+		
+
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+		
+
+
+
+
+
+
+		<style type="text/css">
+
+
+			/*commun */
+
+			body{ color:#444; }
+			p{font-size:13px; }
+			.conteneurFlex{ display:flex;  }
+			h2{ color:#0cc; font-weight: 400; margin: 0 ; text-align: center; opacity: 0.8; }
+			.titre{ color:#066; font-size:3em; margin:0.3em 0; text-align: center; font-weight:700;text-transform: uppercase;}
+			.section{ margin-bottom:2em; padding: 5%; background: #f8f9f9; }
+
+
+
+			/* section Competences */
+
+			.competences .conteneurFlex article{ margin:2%; flex: 0 1 25%; text-align: center; }
+			.competences h3{ color:#0cc; }
+
+			.competences .conteneurFlex article div{
+				width:100px; 
+				height:100px; 
+				background:#066; 
+				color:#fff;     
+				display: flex;
+			    align-items: center;
+			    justify-content: center;
+			    margin: 0 auto; 
+			    border-radius: 50%;
+			    cursor: pointer;
+			    transition: .5s
+			}
+
+			.competences .conteneurFlex article div i{font-size: 3em}
+			.competences .conteneurFlex article div:hover{ transform: scale(1.3); background: #fff; color:#066}
+
+			
+
+
+
+			@media screen and (max-width:990px){
+				.competences .conteneurFlex { flex-wrap: wrap }			
+				.competences .conteneurFlex article{ flex: 0 0 46%;}
+			}
+			
+			@media screen and (max-width:768px){
+								
+				.competences .conteneurFlex article{ flex: 1 1 96%;}				
+			}
+
+
+
+			.section-1{
+				display: flex;
+				justify-content: center;
+				width: 100%;
+				height: 680px;
+				background: url('./images/section-1.png') no-repeat;
+				background-size: cover;
+				color: #fff;
+			}
+			.section-1 .container{
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				width: 50%; 
+
+			}
+			.title-1 .text-1{
+				text-align: center;
+				font-size: 18px;
+			}
+			.title-1 h1{
+				font-size: 55px;
+				text-transform: uppercase;
+				text-align: center;
+			}
+			.text-1 p{
+				text-align: center;
+			}
+			.container-btn{
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+
+
+			.btn-1{
+				background: #0cc;
+				border-radius: 5px;
+				width: 10em;
+				height: 4em;
+				text-align: center;
+				text-decoration-line: none;
+				color: #fff;
+				line-height: 4em;
+				margin: 2em;
+			}
+			.btn-2{
+				border: solid 1px #fff;
+				border-radius: 5px;
+				width: 10em;
+				height: 4em;
+				text-align: center;
+				text-decoration-line: none;
+				color: #fff;
+				line-height: 4em;
+				margin: 2em;
+			}
+
+			.btn-2:hover{
+				color: #000;
+				background: #fff;
+				transition: 1s;
+			}
+
+		</style>
+
+
+
+
+		<main>
+		
+			<section  class="section-1">
+				<div class="container">
+					<div class='title-1' >
+						<h1>we are responsive </h1>
+					</div>
+					<div class="text-1">
+						<p>
+							Morbi tempus porta nunc pharetra quisque ligula imperdiet posuere <br>
+							vitae felis proin sagittis leo ac tellus blandit sollicitudin quisque vitae placerat.
+						</p>
+					</div>
+					<div class="container-btn" >
+						<a  class="btn-1"href="">OUR SERVICES</a>
+						<a  class="btn-2" href="">GET STARTED</a>
+					</div>
+				</div>
+				
+			</section>
+
+			<section class="section competences">
+			
+				<div class="centrageTaille">
+					
+					<h2>Why choose Us</h2>
+					<div class="titre">Features</div>
+
+					
+					<div class="conteneurFlex">
+
+
+						<article>
+							<div><i class="material-icons">face</i></div>
+							<h3>Responsive Design</h3>
+							<p>The theme is responsive, your website will look great on touch devices.</p>
+						</article>
+
+						<article>
+							<div><i class="material-icons">face</i></div>
+							<h3>Parallax Effect</h3>
+							<p>Create memorable pages with smooth parallax effects that everyone loves. </p>
+						</article>
+
+
+						<article>
+							<div><i class="material-icons">face</i></div>
+							<h3>WooCommerce</h3>
+							<p>Build a front page for your WooCommerce store in minutes.</p>
+						</article>
+
+
+						<article>
+							<div><i class="material-icons">face</i></div>
+							<h3>Content Blocks</h3>
+							<p>Change the sections contents, display each block exactly where you need it. </p>
+						</article>
+
+					</div>
+
+
+
+				</div>
+
+			</section>
+
+
+<style>
+	.centrageTaille {
+		text-align: center;
+	}
+	.about {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex: 0 1 40%;
+	}
+	.about_img{
+		margin: 2%;
+		font-size: 19px; 
+		padding-bottom: 30px;
+		width: 541px;
+	}
+	</style>
+
+
+			<section>
+				<div class="centrageTaille">
+					<h2>Section subtitle</h2>
+					<div class="titre">About</div>
+					<br>
+					<p>We provide creative solutions to clients around the world, <br>  
+					creating things that get attention and meaningful.</p>
+				</div>
+				<div class="about">
+					<div class="about_img">
+						<img src="./images/our_history.png" alt="">
+						<p> <span> Our History </span> <br> <br>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum enim similique, ab provident unde iusto tenetur s?</p>
+					</div>
+					<div class="about_img">
+						<img src="./images/our_vision.png" alt="">
+						<p> <span> Our History </span> <br> 
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum enim similique, ab provident unde iusto tenetur s?</p>
+					</div>
+				</div>
+			</section>
+
+<style>
+	
+	.Services{
+		background: #f8f9f9;
+	}
+	.Services .centrageTaille {
+		width: 100%;
+		padding-top: 2%;
+		margin: 0;
+	}
+	.content-service{
+		display: inline-block;
+		width: 45%;
+		background: #fff;
+		margin: 1%;
+	}
+	.service {
+		display: inline-block;
+		width: 30%;
+	}
+	.service-text {
+		display: inline-block;
+		width: 60%;
+	}
+
+</style>
+			<section class="Services">
+				<div class="centrageTaille">
+					<h2>Section subtitle</h2>
+					<div class="titre">Our services</div>
+			
+					<div class="content-service">
+						<div class="service">
+							<img src="./images/service-1.png" alt="">
+						</div>
+						<div class="service-text">
+							<h2 class="title-service">Service Title #1</h2>
+							<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi euismod in pharetra a ultricies</p>
+						</div>
+					</div>
+					<div class="content-service">
+						<div class="service">
+							<img src="./images/service-2.png" alt="">
+						</div>
+						<div class="service-text">
+							<h2 class="title-service">Service Title #2</h2>
+							<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi euismod in pharetra a ultricies</p>
+						</div>
+					</div>
+					<div class="content-service">
+						<div class="service">
+							<img src="./images/service-3.png" alt="">
+						</div>
+						<div class="service-text">
+							<h2 class="title-service">Service Title #3</h2>
+							<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi euismod in pharetra a ultricies</p>
+						</div>
+					</div>
+					<div class="content-service">
+						<div class="service">
+							<img src="./images/service-4.png" alt="">
+						</div>
+						<div class="service-text">
+							<h2 class="title-service">Service Title #4</h2>
+							<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi euismod in pharetra a ultricies</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		
+
+		</main>
+
+
+		<footer>
+			
+		</footer>
+
+
+
+
+	</body>
+</html>

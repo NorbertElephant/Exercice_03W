@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exo html CSS</title>
+</head>
+<body>
+    <style>
+        .Truc div{
+            color: #fdc;
+        }
+        .Truc {
+            color: #F00 !important ;
+        }
+        .Bidule {
+            color: #ccc; 
+        }
+        .Truc {
+            color: #F0d;
+        }
+
+        ul~div:hover {
+            color: #079;
+            font-size: 2em;
+            text-decoration-line: overline;
+        }
+
+        ul li:nth-child(2){
+            color: darkkhaki;
+        }
+        ul li:nth-child(2n+1){
+            color: darkred;
+        }
+        ul li:last-child{
+            background: darkgreen;
+        }
+
+        a {
+            color: darkblue;
+            text-decoration-line: none;
+        }
+        a:hover{
+            text-decoration-line: underline;
+        }
+        a:visited {
+            color: #ccc;
+
+        }
+        .posFond{
+            position: relative;
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            border: 5px rgba(0,0,0,.5) solid;
+            background: url("img/index-1.png") no-repeat -40px 235px;
+            transition: .5s all;
+        }
+
+
+        .posFond:hover{
+            background-position: 30px;
+        }
+           
+        .posFond2{
+            position: relative;
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            border: 5px rgba(0,0,0,.5) solid;
+            background:  url("img/index-1.png") no-repeat -40px 235px,url("img/index-2.png") no-repeat 230px 230px ;
+            transition: .5s all;
+        }
+
+
+        .posFond2:hover{
+            background-position: 30px;
+            
+        }
+    </style>
+
+    <main>
+        <!-- <div class="Truc">
+            <p>
+                Bonjour
+            </p>
+            <p class="Bidule">
+                Coucou
+            </p>
+            <div class="Bidule">
+                Hello
+            </div>
+        </div>
+
+        <a href="*">Allons chez Billy! </a>
+        
+<ul>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas nibh vehicula dui egestas, in tempus velit semper. Pellentesque nec condimentum mi, sit amet aliquam neque. Duis urna augue, hendrerit vitae imperdiet vitae, pretium sit amet enim. Mauris luctus efficitur sem vel congue.</p>
+    <p>In in sagittis nibh. Aliquam tincidunt rhoncus felis sed consectetur. Nunc lacinia arcu vitae erat ultrices, vitae sagittis mauris ultricies. Mauris vulputate, diam vel dictum mollis, leo quam ultricies arcu, sit amet volutpat ex est sit amet ante. Maecenas accumsan aliquet molestie.</p> -->
+    
+    </main>
+
+
+
+    <div class="posFond">
+       
+    </div>
+
+    <div class="posFond2">
+       
+        </div>
+
+</body>
+</html>

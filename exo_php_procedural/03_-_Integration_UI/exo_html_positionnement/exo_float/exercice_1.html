@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+        <title>Le positionnement CSS - Mise en pratique</title>
+
+        <link rel="stylesheet" type="text/css" href="../../../_assets/css/style.css">
+    </head>
+
+    <body>
+        <h1>Le positionnement CSS - Mise en pratique</h1>
+        <blockquote>Suite au <a href="../../Cours/07_-_Le_positionnement_CSS.html" target="_blank" title="">cours sur le positionnement CSS</a>, nous allons mettre en pratique les différentes propriétés CSS correspondant à ces structures.<br />Vous allez trouver ci-dessous différentes images représentant des architectures HTML que vous devez reproduire.</blockquote>
+        <hr />
+        <h2>Exercice 1 Montage en FLOAT</h2>
+        <img alt="Exercice 1 - Le positionnement CSS" src="assets/images/07.01_-_Le_positionnement_CSS.jpg" />
+
+        <div style="height: 12em; width: 30%;">
+                <div style="background-color: blue; width: 100%; height: 1.5em; "></div>
+                <div>
+                        <div style="
+                        background-color: green;
+                        float: left;
+                        width: 20%;
+                        height: 3.5em;"></div>
+                        <div style="background-color: gray;
+                        float: right;
+                        width: 80%;
+                        height: 7em;
+                        "></div>
+                </div>
+                <div style="background-color: black;
+                clear: both;
+                width: 100%;
+                height: 1em;
+                "></div>    
+        </div>
+            
+        <hr />
+        <style>
+            .Conteneur{
+                width: 30%;
+                height: 12em;
+                display: grid;
+                grid-template-columns: 2fr 6fr;
+                grid-template-rows:  repeat(3, 3fr) 1fr;
+                grid-template-areas: 
+                    'Head Head '
+                    'Nav Main'
+                    'Aside Main'
+                    'Footer Footer'
+            }
+            .Head{
+                background: blue;
+                grid-area: Head
+            }
+            .Nav{
+                background: green;
+                grid-area: Nav
+            }
+            .Aside{
+                background: #fff;
+                grid-area: Aside
+            }
+            .Main{
+                background: #ccc;
+                grid-area: Main
+            }
+            .Footer{
+                background: #000;
+                grid-area: Footer
+            }
+        </style>
+
+        <h2>Montage en GRID </h2>
+        
+        <div class="Conteneur">
+            <div class="Head"></div>
+            <div class="Nav"></div>
+            <div class="Aside"></div>
+            <div class="Main"></div>
+            <div class="Footer"></div>
+        </div>
+      
+        
+    </body>
+</html>

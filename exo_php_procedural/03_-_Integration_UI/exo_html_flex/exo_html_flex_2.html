@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exo_html_flex_produits</title>
+</head>
+<body>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        img {
+            width: 100%;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        section{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        article{
+            width: 30%;
+            display: flex;
+            flex-direction: row;
+            margin: 0.5em;
+        }
+
+        .image{
+            height: 50%;
+            width: 50%;
+            margin-bottom: 0.5em;
+        }
+        .resume{
+            height: 50%;
+            width: 50%;
+            padding-left: 0.5em;
+        }
+
+        @media screen and (max-width: 768px){
+            article{
+                width: 50%;
+                height: 100%;
+                flex-direction: column;
+                margin: 0;
+            }
+            .image{
+                height: 50%;
+                width: 90%;
+                margin-bottom: 0.5em;
+            }
+            .resume{
+                height: 50%;
+                width: 90%;
+                padding-left: 0.5em;
+            }
+        }
+
+         @media screen and (max-width: 480px){
+            section{
+                justify-content: space-between;
+            }
+            article{
+                width: 100%;
+                height: 100%;
+                margin: 0;
+            }
+            img{
+                width: 80%;
+            }
+            .image{
+                height: 50%;
+                width: 90%;
+                margin-bottom: 0.5em;
+            }
+            .resume{
+                height: 50%;
+                width: 100%;
+                padding-left: 0.5em;
+            }
+        }
+    </style>
+    <main>
+        <section>
+            <article>
+                <div class="image">
+                    <img src="../exo_html_flex/images/moon.png" alt="moon">
+                </div>
+                <div class="resume"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto laborum .</div>
+            </article>
+            <article>
+                <div class="image">
+                        <img src="../exo_html_flex/images/moon.png" alt="moon">
+                </div>
+                <div class="resume"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto laborum error eligendi? Culpa provident necessitatibus voluptatem aliquam facere aliquid odit nemo sed corrupti, vitae cupiditate id. Minus ab doloribus repellat.</div>
+            </article>
+            <article>
+                <div class="image">
+                    <img src="../exo_html_flex/images/moon.png" alt="moon">
+                </div>
+                <div class="resume"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto laborum error eligendi? Culpa provident nfacere aliquid odit nemo sed corrupti, vitae cupiditate id. Minus ab doloribus repellat.</div>
+            </article>
+            <article>
+                <div class="image">
+                        <img src="../exo_html_flex/images/moon.png" alt="moon">
+                </div>
+                <div class="resume"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto laborum error eligendi? Culpa provident necessitatibus voluptatem aliquam facere aliquid odit nemo sed corrupti, vitae cupiditate id. Minus ab doloribus repellat.</div>
+            </article>
+            <article>
+                <div class="image">
+                        <img src="../exo_html_flex/images/moon.png" alt="moon">
+                </div>
+                <div class="resume"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architectrror eligendi? Culpa provident necessitatibus voluptatem aliquam te id. Minus ab doloribus repellat.</div>
+            </article>
+            <article>
+                <div class="image">
+                        <img src="../exo_html_flex/images/moon.png" alt="moon">
+                </div>>
+                <div class="resume"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto laborum .</div>
+            </article>
+            <article>
+                <div class="image">
+                        <img src="../exo_html_flex/images/moon.png" alt="moon">
+                </div>
+                <div class="resume"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto laborum error eligendi? Culpa provident necessitatibus volt nemo sed corrupti, vitae cupiditate id. Minus ab doloribus repellat.</div>
+            </article>
+            <article>
+                <div class="image">
+                        <img src="../exo_html_flex/images/moon.png" alt="moon">
+                </div>
+                <div class="resume"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto laborum error eligendi? Culpa provident necessitatibus voluptatem aliquam facere aliquid odit nemo sed corrupti, vitae cupiditate id. Minus ab doloribus repellat.</div>
+            </article>
+            <article>
+                <div class="image">
+                        <img src="../exo_html_flex/images/moon.png" alt="moon">
+                </div>
+                <div class="resume"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto laborum error eligendi? Culpa provident necessitatibus voluptatem aliquam facere aliquid odit nemo sed corrupti, vitae cupiditate id. Minus ab doloribus repellat.</div>
+            </article>
+       </section>
+    </main>
+
+</body>
+</html>

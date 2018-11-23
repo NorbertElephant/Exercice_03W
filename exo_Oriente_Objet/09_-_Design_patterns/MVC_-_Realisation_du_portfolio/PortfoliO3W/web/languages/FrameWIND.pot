@@ -1,0 +1,393 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FrameWIND\n"
+"POT-Creation-Date: 2017-06-26 22:51+0200\n"
+"PO-Revision-Date: 2017-05-10 12:54+0200\n"
+"Last-Translator: \n"
+"Language-Team: W.I.N.D. Agency.com <translate@wind-agency.com>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _;_n:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: app/themes/default/Admin/main.php:36
+msgid "Back to main site"
+msgstr ""
+
+#: app/themes/default/Admin/main.php:37 bundles/Admin/AdminController.php:71
+#: bundles/Admin/Views/Admin/dashboard.php:4
+msgid "Dashboard"
+msgstr ""
+
+#: app/themes/default/Admin/main.php:38
+msgid "Users"
+msgstr ""
+
+#: app/themes/default/Admin/main.php:39
+msgid "Pages"
+msgstr ""
+
+#: app/themes/default/Admin/main.php:40
+#: bundles/Portfolio/PortfolioController.php:39
+#: bundles/Portfolio/Views/Admin/list.php:4
+msgid "Portfolio"
+msgstr ""
+
+#: app/themes/default/Admin/main.php:41
+msgid "Services"
+msgstr ""
+
+#: app/themes/default/Admin/main.php:50
+msgid "Welcome"
+msgstr ""
+
+#: app/themes/default/Admin/main.php:51
+msgid "Edit my profile"
+msgstr ""
+
+#: app/themes/default/Admin/main.php:52
+msgid "Log out"
+msgstr ""
+
+#: app/themes/default/Admin/main.php:65 web/footer.php:11
+msgid "All rights reserved"
+msgstr ""
+
+#: bundles/Admin/AdminController.php:29 bundles/Admin/Views/default.php:4
+#: bundles/Users/UsersController.php:54 bundles/Users/Views/default.php:4
+msgid "Login form"
+msgstr ""
+
+#: bundles/Admin/Views/Admin/dashboard.php:9
+msgid ""
+"This is a demo application built in a personnal Framework to illustrate "
+"the recommended way of developing advanced applications with MVC design "
+"pattern"
+msgstr ""
+
+#: bundles/Admin/Views/default.php:15 bundles/Users/Views/default.php:15
+msgid "Login or e-mail address"
+msgstr ""
+
+#: bundles/Admin/Views/default.php:19 bundles/Admin/Views/default.php:34
+#: bundles/Users/Views/Admin/add.php:45 bundles/Users/Views/default.php:19
+#: bundles/Users/Views/default.php:34
+msgid "Password"
+msgstr ""
+
+#: bundles/Admin/Views/default.php:23 bundles/Users/Views/default.php:23
+msgid "Log in"
+msgstr ""
+
+#: bundles/Admin/Views/default.php:28 bundles/Users/Views/default.php:28
+msgid ""
+"This is a demo application built in a personnal Framework<br>to illustrate "
+"the recommended way of developing advanced applications with MVC design "
+"pattern"
+msgstr ""
+
+#: bundles/Admin/Views/default.php:29 bundles/Users/Views/default.php:29
+msgid "Try either of the following users"
+msgstr ""
+
+#: bundles/Admin/Views/default.php:33 bundles/Users/Views/Admin/add.php:16
+#: bundles/Users/Views/Admin/edit.php:17
+#: bundles/Users/Views/Admin/profile.php:17
+#: bundles/Users/Views/default.php:33
+msgid "Username"
+msgstr ""
+
+#: bundles/Admin/Views/default.php:35 bundles/Users/UsersController.php:355
+#: bundles/Users/Views/default.php:35
+msgid "Role"
+msgstr ""
+
+#: bundles/Admin/Views/default.php:42 bundles/Users/Views/default.php:42
+msgid "Super administrator"
+msgstr ""
+
+#: bundles/Admin/Views/default.php:47 bundles/Users/Views/default.php:47
+msgid "Subscriber"
+msgstr ""
+
+#: bundles/Pages/PagesController.php:61 bundles/Pages/Views/Admin/list.php:4
+msgid "Pages list"
+msgstr ""
+
+#: bundles/Pages/PagesController.php:87 bundles/Pages/Views/Admin/add.php:4
+#: bundles/Pages/Views/Admin/edit.php:6 bundles/Pages/Views/Admin/list.php:6
+#: bundles/Services/Views/Admin/edit.php:6
+#: bundles/Services/Views/Admin/list.php:6
+msgid "Add new page"
+msgstr ""
+
+#: bundles/Pages/PagesController.php:112 bundles/Pages/Views/Admin/edit.php:4
+msgid "Edit page"
+msgstr ""
+
+#: bundles/Portfolio/Views/Admin/add.php:4
+#: bundles/Portfolio/Views/Admin/addCategory.php:6
+#: bundles/Portfolio/Views/Admin/edit.php:6
+#: bundles/Portfolio/Views/Admin/editCategory.php:6
+#: bundles/Portfolio/Views/Admin/list.php:7
+#: bundles/Portfolio/Views/Admin/manageCategories.php:6
+#: bundles/Posts/PostsController.php:162 bundles/Posts/Views/Admin/add.php:4
+#: bundles/Posts/Views/Admin/addCategory.php:6
+#: bundles/Posts/Views/Admin/edit.php:6
+#: bundles/Posts/Views/Admin/editCategory.php:6
+#: bundles/Posts/Views/Admin/list.php:7
+#: bundles/Posts/Views/Admin/manageCategories.php:6
+msgid "Add new post"
+msgstr ""
+
+#: bundles/Portfolio/Views/Admin/addCategory.php:4
+#: bundles/Posts/PostsController.php:76
+#: bundles/Posts/Views/Admin/addCategory.php:4
+msgid "Add new category"
+msgstr ""
+
+#: bundles/Portfolio/Views/Admin/edit.php:4
+#: bundles/Posts/PostsController.php:187 bundles/Posts/Views/Admin/edit.php:4
+msgid "Edit post"
+msgstr ""
+
+#: bundles/Portfolio/Views/Admin/editCategory.php:4
+#: bundles/Posts/PostsController.php:101
+#: bundles/Posts/Views/Admin/editCategory.php:4
+msgid "Edit category"
+msgstr ""
+
+#: bundles/Portfolio/Views/Admin/list.php:6
+#: bundles/Posts/Views/Admin/list.php:6
+msgid "Manage categories"
+msgstr ""
+
+#: bundles/Portfolio/Views/Admin/manageCategories.php:4
+#: bundles/Posts/PostsController.php:50
+#: bundles/Posts/Views/Admin/manageCategories.php:4
+msgid "Categories list"
+msgstr ""
+
+#: bundles/Posts/PostsController.php:136 bundles/Posts/Views/Admin/list.php:4
+msgid "Posts list"
+msgstr ""
+
+#: bundles/Services/ServicesController.php:39
+#: bundles/Services/Views/Admin/list.php:4
+msgid "Services list"
+msgstr ""
+
+#: bundles/Services/ServicesController.php:65
+#: bundles/Services/Views/Admin/add.php:4
+msgid "Add new service"
+msgstr ""
+
+#: bundles/Services/ServicesController.php:90
+#: bundles/Services/Views/Admin/edit.php:4
+msgid "Edit service"
+msgstr ""
+
+#: bundles/Users/UsersController.php:49
+#: bundles/Users/Views/Admin/default.php:4
+msgid "Users list"
+msgstr ""
+
+#: bundles/Users/UsersController.php:127 bundles/Users/Views/Admin/add.php:66
+msgid "Add user"
+msgstr ""
+
+#: bundles/Users/UsersController.php:192
+msgid "Profile"
+msgstr ""
+
+#: bundles/Users/UsersController.php:226 bundles/Users/Views/Admin/edit.php:4
+msgid "Edit user"
+msgstr ""
+
+#: bundles/Users/Views/Admin/add.php:4
+#: bundles/Users/Views/Admin/default.php:6
+#: bundles/Users/Views/Admin/edit.php:6
+#: bundles/Users/Views/Admin/profile.php:6
+msgid "Add new user"
+msgstr ""
+
+#: bundles/Users/Views/Admin/add.php:13 bundles/Users/Views/Admin/edit.php:14
+#: bundles/Users/Views/Admin/profile.php:14
+msgid "Name"
+msgstr ""
+
+#: bundles/Users/Views/Admin/add.php:20 bundles/Users/Views/Admin/edit.php:21
+#: bundles/Users/Views/Admin/profile.php:21
+msgid "First name"
+msgstr ""
+
+#: bundles/Users/Views/Admin/add.php:24 bundles/Users/Views/Admin/edit.php:25
+#: bundles/Users/Views/Admin/profile.php:25
+msgid "Last name"
+msgstr ""
+
+#: bundles/Users/Views/Admin/add.php:30 bundles/Users/Views/Admin/edit.php:31
+#: bundles/Users/Views/Admin/profile.php:31
+msgid "Contact info"
+msgstr ""
+
+#: bundles/Users/Views/Admin/add.php:33 bundles/Users/Views/Admin/edit.php:34
+#: bundles/Users/Views/Admin/profile.php:34
+msgid "E-mail address"
+msgstr ""
+
+#: bundles/Users/Views/Admin/add.php:39 bundles/Users/Views/Admin/edit.php:40
+#: bundles/Users/Views/Admin/profile.php:40
+msgid "Manage options"
+msgstr ""
+
+#: bundles/Users/Views/Admin/add.php:49
+msgid "Repeat password"
+msgstr ""
+
+#: bundles/Users/Views/Admin/add.php:56 bundles/Users/Views/Admin/edit.php:56
+#: bundles/Users/Views/Admin/profile.php:56
+msgid "Avatar"
+msgstr ""
+
+#: bundles/Users/Views/Admin/add.php:59 bundles/Users/Views/Admin/edit.php:62
+#: bundles/Users/Views/Admin/profile.php:62
+msgid "Image"
+msgstr ""
+
+#: bundles/Users/Views/Admin/edit.php:46
+#: bundles/Users/Views/Admin/profile.php:46
+msgid "New password"
+msgstr ""
+
+#: bundles/Users/Views/Admin/edit.php:50
+#: bundles/Users/Views/Admin/profile.php:50
+msgid "Repeat new password"
+msgstr ""
+
+#: bundles/Users/Views/Admin/edit.php:69
+msgid "Update user"
+msgstr ""
+
+#: bundles/Users/Views/Admin/edit.php:70
+msgid "Delete user"
+msgstr ""
+
+#: bundles/Users/Views/Admin/profile.php:4
+msgid "My profile"
+msgstr ""
+
+#: bundles/Users/Views/Admin/profile.php:69
+msgid "Update profile"
+msgstr ""
+
+#: bundles/Users/Views/Admin/profile.php:70
+msgid "Delete profile"
+msgstr ""
+
+#: vendor/NavigationManagement.php:83
+msgid "<span class=\"ok\">Updating successfully</span>"
+msgstr ""
+
+#: vendor/NavigationManagement.php:86
+msgid "<span class=\"warning\">Please fill all required fields</span>"
+msgstr ""
+
+#: vendor/NavigationManagement.php:89
+msgid "<span class=\"warning\">Password mismatch</span>"
+msgstr ""
+
+#: vendor/NavigationManagement.php:92
+msgid "<span class=\"warning\">Avatar can't be changed</span>"
+msgstr ""
+
+#: vendor/NavigationManagement.php:95
+msgid "<span class=\"error\">Wrong login or password. Try again</span>"
+msgstr ""
+
+#: vendor/NavigationManagement.php:98
+msgid "<span class=\"error\">An error occured</span>"
+msgstr ""
+
+#: web/403.php:6 web/403.php:13 web/404.php:6 web/404.php:13 web/500.php:6
+#: web/500.php:13
+msgid "Error"
+msgstr ""
+
+#: web/403.php:15
+msgid "Access denied/forbidden"
+msgstr ""
+
+#: web/403.php:21
+msgid "You shall not pass !"
+msgstr ""
+
+#: web/403.php:22
+msgid "We're sorry, you don't have access to the page you requested."
+msgstr ""
+
+#: web/403.php:23
+msgid "To view this page, you may have to sign in with a different account."
+msgstr ""
+
+#: web/403.php:27 web/404.php:27 web/500.php:27
+msgid "Back to homepage"
+msgstr ""
+
+#: web/404.php:15
+msgid "Page not found"
+msgstr ""
+
+#: web/404.php:21
+msgid "You are lost !"
+msgstr ""
+
+#: web/404.php:22
+msgid "They can't all be winners ... try again."
+msgstr ""
+
+#: web/404.php:23
+#, php-format
+msgid ""
+"The requested URL could not be found on this server.<br>If you entered the "
+"URL manually, please check it and try again.<br>If you think this is a "
+"server error, please <a href=\"mailto:%s\">contact technical support</a>."
+msgstr ""
+
+#: web/500.php:15
+msgid "Internal server error"
+msgstr ""
+
+#: web/500.php:21
+msgid "Sorry, it's not you. It's us !"
+msgstr ""
+
+#: web/500.php:22
+msgid "Something went wrong"
+msgstr ""
+
+#: web/500.php:23
+#, php-format
+msgid ""
+"We are experiencing an internal server problem.<br>Please try again later "
+"or <a href=\"mailto:%s\">contact technical support</a>."
+msgstr ""
+
+#: web/header.php:36
+msgid "Home"
+msgstr ""
+
+#: web/header.php:51
+msgid "Search keywords"
+msgstr ""
+
+#: web/header.php:55
+msgid "Search"
+msgstr ""

@@ -1,0 +1,23 @@
+AddType image/svg+xml .svg .svgz
+
+<IfModule mod_negotiation.c>
+    Options -MultiViews
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    ##RewriteBase /
+    RewriteBase /www/09_-_Design_patterns/valid/MVC_-_Realisation_du_portfolio/PortfoliO3W/
+
+    ErrorDocument 403 error/403
+    ErrorDocument 404 error/404
+    ErrorDocument 500 error/500
+
+    ## If the request isn't for a directory, or a file, or a symbolic link that exists
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-l
+    RewriteRule ^error/([0-9]{3})/?$ web/$1.php [NC,L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ web/ [QSA,L]
+</IfModule>
